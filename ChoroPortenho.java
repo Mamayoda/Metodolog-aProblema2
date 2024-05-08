@@ -1,5 +1,5 @@
 
-public class ChoroPortenho {
+public class ChoroPortenho extends Luchador {
 	
 	public String golpear(){
 		return("ALETAZO MARINO!!!");

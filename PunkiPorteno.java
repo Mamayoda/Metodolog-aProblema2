@@ -1,4 +1,4 @@
-public class PunkiPorteno {
+public class PunkiPorteno extends Luchador{
     public String golpear(){
 		return("Combo de PUNKI PORTENIOOOOO!!!");
 	}
