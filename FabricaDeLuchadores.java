@@ -7,6 +7,9 @@ public class FabricaDeLuchadores {
         } else if (fighterType.equals("2")) {
             // Crea una instancia de MineroWarrior
             return new MineroWarrior();
+        } else if (fighterType.equals("3")) {
+            // Manejar tipos no válidos, puede lanzar una excepción o retornar null
+            return new PunkiPorteno();
         } else {
             // Manejar tipos no válidos, puede lanzar una excepción o retornar null
             return null;
