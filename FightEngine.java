@@ -181,6 +181,7 @@ public class FightEngine {
         }
         
         seleccion.close();
+        seleccionArma.close();
         System.out.println("FIN DEL JUEGO.");
     }
 }
