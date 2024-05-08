@@ -6,9 +6,16 @@ public class FightEngine {
         Scanner seleccion = new Scanner(System.in);
         Scanner seleccionArma = new Scanner(System.in);
         Dificultad dificultad = new Dificultad(100);
+
+         // Se crea observadores y se añaden al personaje
+        obeserver observer1 = new ObservadorContreto("Observador 1");
+        obeserver observer2 = new ObservadorContreto("Observador 2");
+        dificultad.addObserver(observer1);
+        dificultad.addObserver(observer2);
+        
         System.out.println("Empieza el juego!!!");
         System.out.println("Selecciona tu luchador (1 o 2 o 3): 1-Choro Portenho | 2-Minero Warrior | 3-Punki Porteño");
-        
+
         // Lee la elección del jugador
         String luchadorPlayer1 = seleccion.nextLine();
 
