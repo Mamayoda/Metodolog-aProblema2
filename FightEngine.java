@@ -8,7 +8,7 @@ public class FightEngine {
         Dificultad dificultad = new Dificultad(100);
 
          // Se crea observadores y se añaden al personaje
-        Observer observer1 = new ObservadorContreto("Observador 1");
+        Observer observer1 = new ObservadorContreto();
         dificultad.addObserver(observer1);
 
         System.out.println("Empieza el juego!!!");
@@ -173,8 +173,6 @@ public class FightEngine {
                     }
                 }
                 
-                // Imprime la vida restante del enemigo
-                dificultad.imprimirVidaEnemigo();
             }
         }
         
