@@ -1,4 +1,4 @@
-public class ObservadorContreto implements obeserver {
+public class ObservadorContreto implements Observer {
     private String nombre;
 
     public ObservadorContreto(String nombre) {

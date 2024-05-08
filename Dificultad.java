@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Dificultad {
     private int vidaEnemigo;  // Vida actual del enemigo
-    private List<obeserver> observers;
+    private List<Observer> observers;
 
     // Constructor que inicializa la vida del enemigo
     public Dificultad(int vidaInicial) {
@@ -29,16 +29,16 @@ public class Dificultad {
         System.out.printf("Vida del enemigo %d%n \n", vidaEnemigo);
     }
 
-    public void addObserver(obeserver observer) {
+    public void addObserver(Observer observer) {
         observers.add(observer);
     }
 
-    public void removeObserver(obeserver observer) {
+    public void removeObserver(Observer observer) {
         observers.remove(observer);
     }
 
     public void notifyObservers() {
-        for (obeserver observer : observers) {
+        for (Observer observer : observers) {
             observer.update(vidaEnemigo);
         }
     }

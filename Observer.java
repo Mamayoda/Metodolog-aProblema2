@@ -1,3 +1,3 @@
-public interface obeserver {
+public interface Observer {
     void update(int vidaEnemigo);
 }
