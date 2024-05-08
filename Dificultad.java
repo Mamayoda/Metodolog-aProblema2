@@ -11,8 +11,6 @@ public class Dificultad {
         this.observers = new ArrayList<>();
     }
 
-    
-
     // Método para reducir la vida del enemigo
     public void reducirVida(int daño) {
         vidaEnemigo -= daño;
@@ -31,7 +29,7 @@ public class Dificultad {
         System.out.printf("Vida del enemigo %d%n \n", vidaEnemigo);
     }
 
-        public void addObserver(obeserver observer) {
+    public void addObserver(obeserver observer) {
         observers.add(observer);
     }
 

@@ -6,6 +6,6 @@ public class ObservadorContreto implements obeserver {
     }
 
     public void update(int vidaEnemigo) {
-        System.out.println("El enemigo tiene " + vidaEnemigo + " de vida");
+        System.out.println(nombre+"El enemigo tiene " + vidaEnemigo + " de vida");
     }
 }
